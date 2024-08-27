@@ -22,14 +22,14 @@
                         primary: 'rgb(171, 239, 95);',
                         secondary: 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);',
                         body: 'rgb(242,242,242)',
-                        accent: 'rgb(106, 151, 57)',
+                        light_color: 'rgba(171, 239, 95, 0.5);',
                         light_text: 'rgb(115, 115, 115);',
                     },
                     fontFamily: {
                         Manrope: 'Manrope',
                     },
                     backgroundImage: {
-                        paper: "url('assets/bg')",
+                        paper: "url('assets/bg.jpg')",
                         call_to_action: "url('/images/call.jpg')",
                     },
                 },
@@ -37,7 +37,7 @@
         }
     </script>
 </head>
-<body class="font-Manrope bg-body">
+<body class="font-Manrope bg-body bt-5">
 <header>
 <!-- Navbar Design start -->
     <nav class="w-11/12">
@@ -86,7 +86,7 @@
       <p class="py-6 font-semibold">
         The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,<br> sleek metal accents, and large windows that flood the space with natural light.
       </p>
-      <button class="btn btn-l bg-primary"> Get Started
+      <button class="btn btn-l bg-primary bg-light-color"> View Details
         <i class="fa-solid fa-arrow-right -rotate-45"></i>
       </button>
         
@@ -100,7 +100,7 @@
 
 <!-- Seciton-1-start -->
 <!-- Text-and-Image-Main-Container -->
- <div class="w-11/12 mx-auto flex lg:flex-row flex-col justify-between ">
+ <div class="w-11/12 mx-auto flex lg:flex-row flex-col justify-between">
  <!-- text-title -->
  <div class="flex flex-col gap-6 ">
   <a href="#"><button class="bg-white btn-sm rounded-2xl"><i class="fa-solid fa-arrow-right font-semibol m-2"></i>about us</button></a>
@@ -141,18 +141,13 @@
 </div>
 <!-- Text-and-Image-Main-Container -->
 <!-- Seciton-1-End -->
-
-<!-- Section-2-start -->
-
-<!-- Section-2-End -->
-
 <!-- Section-3-Start -->
-<div class="text-center">
+<div class="text-center mt-8">
 <!-- how-work-button-strat -->
 <a href="#"><button class="btn btn-sm bg-white rounded-2xl"><i class="fa-solid fa-arrow-right font-semibol m-2"></i>How We Works</button></a>
 <!-- how-work-button-End -->
  <!-- title -->
-  <h2>Our Works Process</h2>
+  <h2 class="text-2xl font-bold">Our Works Process</h2>
 <!-- paragraph -->
 The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.
 </div>
@@ -186,7 +181,7 @@ The barn house captivates with its blend of rustic charm and modern sophisticati
 <div class="container mx-auto">
 <div class="text-center">
 <!-- Explore-ours-Works-->
-<a href="#"><button class="btn btn-sm bg-white rounded-2xl"><i class="fa-solid fa-arrow-right font-semibol m-2"></i>Explore our Latest works</button></a>
+<a href="#"><button class="btn btn-sm bg-[#ABEF5F80] rounded-2xl"><i class="fa-solid fa-arrow-right font-semibol m-2"></i>Explore our Latest works</button></a>
 <!-- Explore-our-button-End -->
  <!-- title -->
   <h2>Our Latest Portfolio</h2>
@@ -257,29 +252,117 @@ The barn house captivates with its blend of rustic charm and modern sophisticati
 </div>
 <!-- Section-4 End-->
 
+
 <!-- form-section desing Start -->
 
-<div class="bg-paper hv-[85]">
+<div class="bg-paper bg-no-repeat bg-cover">
 <div>
 <!-- text div start -->
-<div>
+<div class="text-center">
 <!-- let's Connect -->
-<a href="#"><button class="btn btn-sm bg-white rounded-2xl"><i class="fa-solid fa-arrow-right font-semibol m-2"></i>Let's Connect</button></a>
-
+<a href="#"><button class="btn btn-sm bg-[#ABEF5F80] rounded-2xl"><i class="fa-solid fa-arrow-right font-semibol m-2"></i>Let's Connect</button></a>
+<!-- title -->
 <h1>Let’s Discuss Next Project</h1>
 <p>The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.</p>
 </div>
-
+<!-- text-end -->
+<!-- Form-Start -->
+<form class="w-11/12 mx-auto space-y-3">
+  <div class="flex gap-3 md:gap-5 flex-col md:flex-row">
+    <input class="w-full p-5 outline-none rounded-full font-semibold" type="text" name="" placeholder="First Name*"required />
+    <input class="w-full p-5 outline-none rounded-full font-semibold" type="text" name="" placeholder="Last Name*" required/>
+  </div>
+  <div class="flex gap-3 md:gap-5 flex-col md:flex-row">
+    <input class="w-full p-5 outline-none rounded-full font-semibold" type="tel" name="" placeholder="Phone Number*" required/>
+    <input class="w-full p-5 outline-none rounded-full font-semibold" type="email" name="" placeholder="Email Address*" required />
+  </div>
+  <textarea name="" placeholder="Write your message here" rows="8" class="w-full rounded-[20px] md:rounded-[30px] p-5 outline-none font-semibold"></textarea>
+  <button
+    class="btn font-extrabold bg-primary hover:bg-primary border-none shadow-none w-full rounded-full text-base md:text-lg" >Send Mail<span
+    class="bg-black text-white h-7 w-7 rounded-full grid place-items-center"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
+  </button>
+</form>
 </div>
 </div>
-
-
+</div>
 <!-- form-section desing End -->
 
 
-</main>
-<footer>
+<!-- Extra FAQ Section Start -->
+<div class="w-11/12 text-center mt-10 m-y-5">
+  <h1 class="font-extrabold text-4xl">FAQ</h1>
+  <div class="collapse collapse-plus bg-base-200">
+    <input type="radio" name="my-accordion-3" checked="checked" />
+    <div class="collapse-title text-xl font-medium">What services do you offer?</div>
+    <div class="collapse-content">
+      <p>We provide architectural design, interior design, and project management for homes and commercial buildings.</p>
+    </div>
+  </div>
+  <div class="collapse collapse-plus bg-base-200">
+    <input type="radio" name="my-accordion-3" />
+    <div class="collapse-title text-xl font-medium">How do you make sure the design fits my needs?</div>
+    <div class="collapse-content">
+      <p>We listen to your ideas and work closely with you to create a design that matches your style and needs.</p>
+    </div>
+  </div>
+  <div class="collapse collapse-plus bg-base-200">
+    <input type="radio" name="my-accordion-3" />
+    <div class="collapse-title text-xl font-medium">How long does it take to build a house?</div>
+    <div class="collapse-content">
+      <p>It usually takes 6 to 12 months from design to completion, depending on the project.</p>
+    </div>
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">How do you manage the budget?</div>
+      <div class="collapse-content">
+        <p>We give a clear cost estimate and make sure to stay within your budget by managing resources carefully.</p>
+      </div>
+    </div>
+    <div class="collapse collapse-plus bg-base-200">
+      <input type="radio" name="my-accordion-3" />
+      <div class="collapse-title text-xl font-medium">Do you offer eco-friendly designs?</div>
+      <div class="collapse-content">
+        <p>Yes, we can include sustainable materials and energy-efficient features to make your home eco-friendly.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- Extra FAQ Section End -->
+
+</main>
+<footer class="bg-[#1C1C1C] px-6 py-10 lg:py-16 text-center">
+  <div class="max-w-[700px] mx-auto space-y-2">
+    <a class="btn btn-ghost font-black">
+      <span
+        class="h-7 w-7 grid place-items-center rounded-full bg-primary font-black"
+      >
+        <i class="fa-solid fa-arrow-right bg-primary rounded-full p-2  -rotate-45"></i>
+      </span>
+      <span class="text-2xl text-white">Rinterio</span>
+    </a>
+    <p class="text-[#737373]">
+      The barn house captivates with its blend of rustic charm and modern
+      sophistication, featuring weathered wood, sleek metal accents.
+    </p>
+  </div>
+  <div class="max-w-[800px] text-white mx-auto my-5 md:my-10">
+    <ul class="flex flex-col md:flex-row md:justify-between gap-3 md:gap-0 text-color">
+      <li><a href="#" class="hover:underline">Home</a></li>
+      <li><a href="#" class="hover:underline">Services</a></li>
+      <li><a href="#" class="hover:underline">Portfolio</a></li>
+      <li><a href="#" class="hover:underline">Blogs</a></li>
+      <li><a href="#" class="hover:underline">Contact Us</a></li>
+    </ul>
+  </div>
+  <button
+    class="btn font-bold bg-primary hover:bg-btn_hover border-none shadow-none rounded-full w-full md:w-auto md:px-5">
+    Book Consult
+    <span
+      class="bg-black text-white h-7 w-7 rounded-full grid place-items-center"
+      ><i class="fa-solid fa-arrow-right -rotate-45"></i
+    ></span>
+  </button>
 </footer>
 </body>
 
