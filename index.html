@@ -21,9 +21,9 @@
                     colors: {
                         primary: 'rgb(171, 239, 95);',
                         secondary: 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);',
-                        body: 'rgb(248, 246, 243)',
+                        body: 'rgb(242,242,242)',
                         accent: 'rgb(106, 151, 57)',
-                        body_neutral: 'rgb(51, 51, 51)',
+                        light_text: 'rgb(115, 115, 115);',
                     },
                     fontFamily: {
                         Manrope: 'Manrope',
@@ -37,7 +37,7 @@
         }
     </script>
 </head>
-<body class="font-Manrope">
+<body class="font-Manrope bg-body">
 <header>
 <!-- Navbar Design start -->
     <nav class="w-11/12 mx-auto bg-rgb(245, 245, 245)">
@@ -95,41 +95,66 @@
 </div>
  <!-- Hero Section End -->
 <!-- Vector Image start -->
- <div class="w-11/12 mx-auto"><img src="assets/Vector.png" alt=""></div>
+ <div class="w-11/12 mx-auto lg:block hidden"><img src="assets/Vector.png" alt=""></div>
  <!-- Vector Image End -->
+
 <!-- Seciton-1-start -->
- <div class="flex w-11/12">
- <div class="mx-40 flex-col">
- <a href="#"><button class="btn btn-sm mb-2"> 
-<i class="fa-solid fa-arrow-right font-semibold bg-white"></i> about us</button></a>
-<div class="flex flex-col gap-5">
-<h1>We design thoughtful, liveable spaces</h1>
-<p>The barn house captivates with its blend of rustic charm and 
-  modern sophistication, featuring weathered wood, sleek metal accents.</p>
-<div class="box-1 flex">
-<img  src="assets/commercial.png" alt="">
-<div class="box-1-content">
-<h3>Commercial</h3>
-<p>The barn house captivates with its blend of rustic charm and modern.</p>
-</div>
-</div>
-<div class="box-2 flex">
-<img src="assets/residential.png" alt="">
-<div class="box-2-content">
-<h3>Residentail</h3>
-<p>The barn house captivates with its blend of rustic charm and modern.</p>
-</div>
-
-</div>
-
-</div>
+<!-- Text-and-Image-Main-Container -->
+ <div class="w-11/12 mx-auto flex lg:flex-row flex-col justify-between ">
+ <!-- text-title -->
+ <div class="flex flex-col gap-6 ">
+  <a href="#"><button class="bg-white btn-sm rounded-2xl"><i class="fa-solid fa-arrow-right font-semibol m-2"></i>about us</button></a>
+  <div class="flex flex-col gap-5">
+  <h1 class="lg:text-4xl text-2xl font-extrabold">We design thoughtful, <br>liveable spaces</h1>
+  <p class="font-semibold">The barn house captivates with its blend of rustic charm and <br>
+    modern sophistication, featuring weathered wood, sleek metal accents.</p>
  </div>
- <div>
-  <img class="w-full" src="assets/Rectangle.png" alt="">
- </div>
+<!-- box-content -->
+<div class="box-1 flex bg-white p-2 rounded-2xl">
+
+  <img class="p-5" src="assets/commercial.png" alt="">
+
+  <div class="box-1-content m-2">
+  <h3 class="font-bold">Commercial</h3>
+  <p class="light_text">The barn house captivates with its blend <br>of rustic charm and modern.</p>
+  </div>
 </div>
+<!-- box-1-end -->
+
+<!-- box-2-start -->
+  <div class="box-2 flex bg-white p-2 rounded-2xl">
+  <img class="p-5 sm:w-95%" src="assets/residential.png" alt="">
+  
+  
+  <div class="box-2-content">
+  <h3 class="font-bold">Residentail</h3>
+  <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+  </div>
+  </div>
+<!-- box-2-end -->
+</div>
+<!-- Rectengular_Image-start -->
+<div>
+  <img src="assets/Rectangle.png" alt="">
+ </div>
+ <!-- Rec-image-end -->
+</div>
+<!-- Text-and-Image-Main-Container -->
 <!-- Seciton-1-End -->
- 
+
+<!-- Section-2-start -->
+
+<!-- Section-2-End -->
+
+<!-- Section-3-Start -->
+<div>
+<!-- how-work-button-strat -->
+<a href="#"><button>How We Works</button></a>
+<!-- how-work-button-End -->
+</div>
+
+<!-- Section-3-End -->
+
 </main>
 <footer>
 
